@@ -77,22 +77,6 @@ harcamaFormu.addEventListener("submit", (e) => {
 //!Harcamayı Dom'a yaz
 
 const harcamayiDomaYaz = ({ id, miktar, tarih, alan }) => {
-    // const {id, miktar, tarih,alan} = yeniHarcama //destruct the data
-
-    //innerHTML ile
-
-    // harcamaBody.innerHTML += `
-    // <tr>
-    // <td>${tarih}</td>
-    // <td>${alan}</td>
-    // <td>${miktar}</td>
-    // <td><i id=${id} class="fa-solid fa-trash-can text-danger"  type="button"></i></td>
-
-    // </tr>
-    // `
-    //istenmeyen kod çalıştırılabilir.
-
-    // create element yöntemi ile
 
     const tr = document.createElement("tr");
     const appendTd = (content) => {
